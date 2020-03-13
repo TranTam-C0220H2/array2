@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="engLish">
+<button onclick="myTranslate()">Dịch</button>
+<div id="tiengViet"></div>
+<script>
+    function myTranslate() {
+        let a = ['translate', 'read', 'write', 'study', 'black', 'red', 'blue'];
+        let b = ['phiên dịch', 'đọc', 'viết', 'học', 'đen', 'màu đỏ', 'màu xanh da trời'];
+        for (let i = 0; i < 7; i++) {
+            if (document.getElementById('engLish').value === a[i]) {
+                document.getElementById('tiengViet').innerHTML = b[i];
+                break;
+            }
+            else {
+                document.getElementById('tiengViet').innerHTML = 'Không tìm thấy từ này';
+            }
+        }
+    }
+</script>
+</body>
+</html>

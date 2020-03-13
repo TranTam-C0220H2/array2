@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="myChain">
+<button onclick="myConvert()">Chuyển đổi</button>
+<div id="myChange"></div>
+<script>
+    function myConvert() {
+        let a = (document.getElementById('myChain').value).toString();
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let result = Array();
+        for (let x = 0; x < a.length; x++) {
+            if (UPPER.includes(a[x])) {
+                result.push(a[x].toLowerCase());
+            } else if (LOWER.includes(a[x])) {
+                result.push(a[x].toUpperCase());
+            } else {
+                result.push(a[x]);
+            }
+        }
+        document.getElementById('myChange').innerHTML = result.join('');
+    }
+</script>
+</body>
+</html>
