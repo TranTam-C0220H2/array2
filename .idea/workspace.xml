@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61eacb04-2527-446d-b62f-a616a627b20b" name="Default Changelist" comment="" />
+    <list default="true" id="61eacb04-2527-446d-b62f-a616a627b20b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tic-tac-toe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/you-are-stupid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +19,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Z3jLWcFT5lSGy0hKAYz634BO6z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,11 +45,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584074615767</updated>
-      <workItem from="1584074617151" duration="16349000" />
+      <workItem from="1584074617151" duration="17550000" />
+      <workItem from="1584148749744" duration="161000" />
+      <workItem from="1584339712074" duration="7324000" />
+      <workItem from="1584352883672" duration="2673000" />
+      <workItem from="1584365157786" duration="10647000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1584364978385">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584364978385" />
   </component>
 </project>
