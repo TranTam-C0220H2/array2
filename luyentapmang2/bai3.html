@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết một chương trình khai báo một mảng ký tự và kích thước của mảng. Chương trình này đếm số ký tự số trong mảng.
+        let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let number = '0123456789';
+        let arr = Array();
+        let dem = 0;
+        for (let i = 0; i < 20; i++) {
+            arr[i] = possible.charAt(Math.round(Math.random() * possible.length));
+            for (let j = 0; j < number.length; j++) {
+                if (arr[i] === number[j]) {
+                    dem++;
+                }
+            }
+        }
+        document.write('Mảng khởi tạo: ' + arr + '<br>');
+        document.write('Độ dài mảng: ' + arr.length + '<br>');
+        document.write('Số ký tự số trong mảng: ' + dem);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

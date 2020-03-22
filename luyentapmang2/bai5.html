@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+        let possible = 'a3';
+        let arr1 = Array();
+        let arr2 = Array();
+        let dem = 0;
+        for (let i = 0; i <= Math.round(Math.random() * 2); i++) {
+            arr1[i] = possible.charAt(Math.round(Math.random() * possible.length));
+        }
+        document.write('Chuỗi thứ nhất: ' + arr1 + '<br>');
+        for (let i = 0; i <= Math.round(Math.random() * 2); i++) {
+            arr2[i] = possible.charAt(Math.round(Math.random() * possible.length));
+        }
+        document.write('Chuỗi thứ hai: ' + arr2 + '<br>');
+        if (arr1.length === arr2.length) {
+            for (let i = 0; i < arr1.length; i++) {
+                if (arr1[i] !== arr2[i]) {
+                    alert('2 chuỗi không giống nhau');
+                    break;
+                } else {
+                    dem++;
+                }
+            }
+            if (dem === arr1.length) {
+                alert('2 chuỗi giống nhau');
+            }
+        } else {
+            alert('2 chuỗi không giống nhau');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

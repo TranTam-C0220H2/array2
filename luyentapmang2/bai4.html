@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết một chương trình để đếm số từ trong một chuỗi
+        //Ý tưởng: Nếu ký tự hiện tại là dấu cách và ký tự tiếp theo không phải dấu cách thì ta coi đó là bắt đầu của 1 từ.
+        //Lưu ý: Có thể từ đầu tiên không bắt đầu bằng dấu cách.
+        let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz0123456789';
+        let arr = Array();
+        let dem = 1;
+        for (let i = 0; i < 100; i++) {
+            arr[i] = possible.charAt(Math.round(Math.random() * possible.length));
+            if (arr[0] === ' ') {
+                dem--;
+            }
+            if (arr[i] === ' ' && arr[i + 1] !== ' ') {
+                dem++;
+            }
+        }
+        document.write('Chuỗi khởi tạo là: ' + arr.join('') + '<br>');
+        document.write('Số từ trong chuỗi khởi tạo là: ' + dem)
+    </script>
+</head>
+<body>
+
+</body>
+</html>

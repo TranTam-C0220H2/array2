@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.
+        // Ví dụ, nếu một mảng chứa các ký tự  {'c', 's', 'c', '2', '6', '1'} sau khi thực hiện đảo ngược sẽ là "162csc"
+        let possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let arr = Array();
+        for (let i = 0; i < 10; i++) {
+            arr[i] = possible.charAt(Math.round(Math.random() * possible.length));
+        }
+        document.write('Mảng a: ' + arr + '<br>');
+        document.write('Đảo ngược mảng a: ' + arr.reverse());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
